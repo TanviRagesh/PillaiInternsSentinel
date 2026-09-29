@@ -41,8 +41,8 @@ export default function CommandCenter() {
     const fetchLiveData = async () => {
       try {
         const [articlesRes, sysRes] = await Promise.all([
-          fetch('http://localhost:8000/api/articles?limit=10').catch(() => null),
-          fetch('http://localhost:8000/api/system/health').catch(() => null)
+          fetch('https://sentinel-backend-w88d.onrender.com/api/articles?limit=10').catch(() => null),
+          fetch('https://sentinel-backend-w88d.onrender.com/api/system/health').catch(() => null)
         ]);
 
         if (articlesRes && articlesRes.ok) {

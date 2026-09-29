@@ -17,7 +17,7 @@ export default function DetectionsPage() {
   const fetchDetections = async () => {
     setLoading(true);
     try {
-      let url = 'http://localhost:8000/api/articles?limit=50';
+      let url = 'https://sentinel-backend-w88d.onrender.com/api/articles?limit=50';
       if (targetFilter === 'TARGET MET (< 5m)') url += '&target_met=true';
       if (targetFilter === 'TARGET EXCEEDED (> 5m)') url += '&target_met=false';
       if (methodFilter !== 'ALL METHODS') url += `&method=${methodFilter}`;

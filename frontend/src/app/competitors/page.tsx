@@ -13,7 +13,7 @@ export default function CompetitorsPage() {
   const fetchCompetitors = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/api/competitors');
+      const res = await fetch('https://sentinel-backend-w88d.onrender.com/api/competitors');
       if (res.ok) {
         const data = await res.json();
         const mapped = data.map((c: any) => ({
@@ -194,7 +194,7 @@ function AddCompetitorWizard({ onClose }: { onClose: () => void }) {
         is_demo: false
       };
       
-      await fetch('http://localhost:8000/api/competitors', {
+      await fetch('https://sentinel-backend-w88d.onrender.com/api/competitors', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
