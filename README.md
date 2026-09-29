@@ -6,11 +6,11 @@ The system is built as a "Cyber Operations Dashboard", focusing on speed, reliab
 
 ## 🚀 Live Demo
 
-**https://pillai-interns-sentinel.vercel.app/** 
-
-
+*https://pillai-interns-sentinel.vercel.app/*
 Backend hosted at :
- https://sentinel-backend-w88d.onrender.com
+https://sentinel-backend-w88d.onrender.com
+
+
 ---
 
 ## 🏗️ Architecture
