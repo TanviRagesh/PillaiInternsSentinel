@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  /* Cyberpunk / SaaS Dark Theme */
+  --background: #030712; /* Very dark navy/black */
+  --foreground: #f8fafc;
+  
+  --primary: #06b6d4; /* Cyan / Electric blue */
+  --primary-glow: rgba(6, 182, 212, 0.5);
+  
+  --secondary: #8b5cf6; /* Violet */
+  --secondary-glow: rgba(139, 92, 246, 0.5);
+  
+  --success: #10b981; /* Green */
+  --success-glow: rgba(16, 185, 129, 0.4);
+  
+  --warning: #f59e0b; /* Amber */
+  --warning-glow: rgba(245, 158, 11, 0.4);
+  
+  --danger: #ef4444; /* Red / Coral */
+  --danger-glow: rgba(239, 68, 68, 0.4);
+  
+  --surface: #0f172a; /* Card background */
+  --surface-border: #1e293b;
+  
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  
+  --color-surface: var(--surface);
+  --color-surface-border: var(--surface-border);
+  
+  --font-sans: var(--font-geist-sans), Inter, sans-serif;
+  --font-mono: var(--font-geist-mono), 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
