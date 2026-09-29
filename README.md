@@ -10,7 +10,7 @@ The system is built as a "Cyber Operations Dashboard", focusing on speed, reliab
 
 
 Backend hosted at :
- *https://sentinel-backend-w88d.onrender.com*
+ https://sentinel-backend-w88d.onrender.com
 ---
 
 ## 🏗️ Architecture
