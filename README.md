@@ -6,10 +6,11 @@ The system is built as a "Cyber Operations Dashboard", focusing on speed, reliab
 
 ## 🚀 Live Demo
 
-**[Insert Live Demo URL Here]** *(Coming Soon)*
+**https://pillai-interns-sentinel.vercel.app/** 
 
-*(If deploying to production, you can host the Next.js frontend on Vercel and the FastAPI backend on Render or Railway).*
 
+Backend hosted at :
+ *https://sentinel-backend-w88d.onrender.com*
 ---
 
 ## 🏗️ Architecture
